@@ -48,7 +48,7 @@ def convert_md_to_html(args_for_command: list[str]) -> None:
         f.write(
             markdown.markdown(
                 text=md_contents_to_be_converted,
-                extensions=["extra", "sane_lists", "nl2br"],
+                extensions=["extra", "sane_lists", "nl2br", "toc"],
                 output_format="html",
             )
         )
